@@ -1,22 +1,22 @@
 ---
-title: "¿Cómo crear diagramas de clases UML?"
-subtitle: "Aprende a crear diagramas de clases UML. Descubre cómo representar las estructuras de tus programas de manera visual y efectiva. ¡Domina la técnica ahora!"
-tags: ["uml", "class-diagram"]
-authors: ["DF27ARTS"]
+Title: "How to Create UML Class Diagrams?"
+Subtitle: "Learn how to create UML class diagrams. Discover how to visually and effectively represent the structure of your programs. Master the technique now!"
+Tags: ["uml", "class-diagram"]
+Authors: ["DF27ARTS"]
 
 ---
 
-## ¿Cómo crear un diagrama de clases UML?
+## How to Create a UML Class Diagram?
 
-Un diagrama de clases es una de las herramientas más importantes en el lenguaje de modelado UML (Unified Modeling Language), utilizado para visualizar las clases y sus relaciones en un sistema POO (Programming Object Oriented). Un diagrama de clases muestra las clases del sistema, sus atributos, métodos y las relaciones entre ellas, como la herencia y la asociación de clases. En este artículo veremos ejemplos sobre cómo crear un diagrama de clases UML paso a paso.
+A class diagram is one of the most important tools in the UML (Unified Modeling Language) used to visualize classes and their relationships in an OOP (Object-Oriented Programming) system. A class diagram shows the system's classes, their attributes, methods, and relationships like inheritance and association. In this article, we’ll go through step-by-step examples of how to create a UML class diagram.
 
-## Crear un diagrama de clases UML paso a paso
+## Step-by-Step Guide to Creating a UML Class Diagram
 
-Vamos a crear un diagrama de clases paso a paso, existen varias plataformas en internet que te ayudarán a crear un diagrama de clases o de cualquier otro tipo, para este ejemplo, vamos a usar el sitio web gratuito [draw.io](https://app.diagrams.net) uno de las más populares para crear diagramas UML. Si te gusta trabajar con VS code, la exteción de [draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) para VS code te permite crear diagramas UML directamente en tu entorno de desarrollo.
+We’ll create a class diagram step by step. There are many platforms online to help you create class or other types of diagrams. For this example, we’ll use the free website [draw.io](https://app.diagrams.net) one of the most popular tools for creating UML diagrams. If you enjoy working with VS Code, the [draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) for VS Code allows you to create UML diagrams directly within your development environment.
 
-### 1. Crear un archivo de diagramas UML
+### 1. Create a UML Diagram File
 
-El siguiente video te ayudará a entender mejor cómo crear un nuevo archivo en **draw.io** y guardarlo en tu cuenta de [google drive](https://drive.google.com).
+The following video will help you understand how to create a new file in draw.io and save it to your [google drive](https://drive.google.com).
 
 <iframe 
     width="560" 
@@ -28,66 +28,65 @@ El siguiente video te ayudará a entender mejor cómo crear un nuevo archivo en 
     allowfullscreen
 ></iframe>
 
-Si en la sección de nuevo archivo en tu cuenta de google drive no te aparece **diagrams.net** significa que aun no tienes esta aplicación integrada con tu cuenta de drive, para integrar **draw.io** con tu cuenta de drive sigue las siguientes instrucciones: 
+If you don’t see **diagrams.net** in your Google Drive's "New" section, it means the application is not yet integrated with your Drive account. To integrate **draw.io** with your Drive, follow these steps: 
 
-1. Presiona en el botón de `+ Nuevo`, se te abrirá un pestaña para escoger el tipo de archivo que deseas crear.
-2. Dentro de esta pestaña, presiona en el botón que dice **Más**, se te abrirá otra pestaña con más opciones.
-3. Dentro de esta nueva pestaña, presiona en el botón **Conectar más aplicaciones**, esto te abrirá una pequeña página donde puedes descargar y agregar más aplicaciones con tu cuenta de drive.
-4. En esta página, escribe en el buscador (draw.io) y luego cuando te aparezca la aplicación, presiona sobre ella para ver más detalles y haz click en el botón **Instalar**, una vez instalada ya puedes acceder a ella desde tu cuenta de google drive.
+1. Click the `+ Nuevo`, and a tab will open where you can choose the file type to create.
+2. In this tab, click the **Plus** button to open another tab with more options.
+3. In this new tab, click **Connect more apps**, which will open a small page where you can download and add more apps to your Drive account.
+4. On this page, type (draw.io) in the search bar. When the app appears, click on it to see more details and press **Install**. Once installed, you can access it from your Google Drive.
 
-### 2. Identifica las clases necesarias
+### 2.  Identify the Necessary Classes
+The second step in creating a UML class diagram is identifying the classes you'll need for your project. A class is an abstract representation of an object that has specific attributes and behaviors. For our example, we'll model the necessary classes for a book-selling application, essentially a library.
 
-El segundo paso para crear un diagrama de clases UML es identificar las clases que vas a necesitar para tu proyecto. Una clase es una representación abstracta de un objeto que tiene atributos y comportamientos específicos. Para nuestro ejemplo vamos a modelar las clases necesarias para una aplicación de venta de libros, básicamente una biblioteca.
+The main classes for this application are:
 
-Para crear esta aplicación las clases principales son las siguientes:
+1. **Library**: The library class will be the main class of the application, containing all the books.
+2. **Book**: The book class represents a book and all its features, aggregated into the library class.
+3. **Person**: This class will serve as an abstract class to represent common attributes shared between the Seller and Customer classes.
+4. **Seller**: The seller class will be a subclass of the person class but with more specific attributes to represent a seller.
+5. **Customer**: The customer class will also be a subclass of the person class, but we'll add some new features to better represent a customer.
 
-1. **Biblioteca**: la clase biblioteca será básicamente la clase principal de la aplicación que tendrá dentro todos los libros de nuestra app.
-2. **Libro**: la clase libro representa un libro y todas sus características, esta clase es una clase agregada a la clase biblioteca.
-3. **Persona**: esta clase nos servirá como una clase abstracta para representar los valores comunes tanto de la clase vendedor como de la clase cliente.
-4. **Vendedor**: la clase vendedor será una subclase de la clase persona pero con atributos más específicos para representar un vendedor.
-5. **Cliente**: la clase cliente también será una subclase de la clase Persona pero le agregaremos algunas nuevas características para representar mejor a un cliente.
+### 3. Define the Attributes and Methods
 
-### 3. Definir los atributos y métodos
-
-El tercer paso es definir los atributos y métodos de cada clase, a continuación vamos a definir estos atributos en todas las clases de nuestra aplicación. 
+The third step is to define the attributes and methods for each class. Below, we'll define these attributes for all the classes in our application.
 
 ![https://res.cloudinary.com/dleo66u17/image/upload/v1691009711/Captura_de_pantalla_2023-08-02_155300_nhlqka.png](https://res.cloudinary.com/dleo66u17/image/upload/v1691009711/Captura_de_pantalla_2023-08-02_155300_nhlqka.png)
 
-Como puedes ver en este ejemplo, debemos definir cada clase junto con sus atributos y métodos, las cadenas de texto que se encuentran en la parte superior de la línea central son los atributos y las que se encuentran en la parte inferior son los métodos. La estructura básica de un diagrama de clases es la siguiente: 
+ As you can see in this example, we must define each class along with its attributes and methods. The text above the central line are the attributes, and the text below it are the methods. The basic structure of a class diagram is as follows:
 
-- Para declarar los atributos de nuestra clase usa los siguientes signos:  
-    - (+) Pública: Representa que se puede acceder al atributo o método desde cualquier parte de la aplicación.
-    - (-) Privada: Representa que se puede acceder al atributo o método únicamente desde la misma clase.
-    - (#) Protegida: Representa que el atributo o método puede ser accedido únicamente desde la misma clase o desde las clases que hereden de ella (clases hijas o subclases).
-- Los atributos se declaran con la siguiente sintaxis:
+-   To declare the attributes of our class, use the following symbols:
+    - (+) Public: Represents that the attribute or method can be accessed from anywhere in the application.
+    - (-) Private: Represents that the attribute or method can only be accessed within the same class.
+    - (#) Protected: Represents that the attribute or method can only be accessed within the same class or by its child classes (subclasses).
+- Attributes are declared with the following syntax:
 ```
-+ NombreAtributo: TipoDeDato
++ attributeName: dataType
 ```
-- Los métodos de las clases se declaran de la siguiente manera:
+- Methods of the class are declared like this:
 ```
-+ NombreMetodo(nombreParametro: TipoDeDato): TipoDeDatoRetornado
++ methodName(parameterName: dataType): returnType
 ```
 
-Esta es la estructura convencional para crear una diagrama de clases, aunque es importante mencionar que no hay una estructura exacta ya que esto depende de cada proyecto, además también es importante tener en cuenta que los colores de las clases tampoco tiene una estructura convencional, simplemente se usan para diferenciar los diferentes tipos de clases pero puedes usar los colores que quieras o simplemente no usar colores.
+This is the conventional structure for creating a class diagram, but it's important to note that there is no exact structure, as this depends on each project. Also, note that the colors used for the classes are not strictly conventional; they are simply used to differentiate between different types of classes, but you can use any colors you want or none at all.
 
-### 4. Establecer las relaciones
+### 4. Establish Relationships
 
-El cuarto y último paso para crear un diagrama de clases es establecer las relaciones entre las clases, como se muestra en el siguiente ejemplo: 
+The fourth and final step in creating a class diagram is to establish the relationships between the classes, as shown in the example below:
 
 ![https://res.cloudinary.com/dleo66u17/image/upload/v1691172317/Captura_web_4-8-2023_13135_app.diagrams.net_kmisyp.jpg](https://res.cloudinary.com/dleo66u17/image/upload/v1691172317/Captura_web_4-8-2023_13135_app.diagrams.net_kmisyp.jpg)
 
-En este ejemplo, la clase **Persona** que es una clase abstracta la relacionamos con sus clases hijas o subclases, la clase **Vender** y la clase **Cliente** haciendo uso de una línea sólida con una flecha en forma de triángulo, luego la clase principal **Biblioteca** la relacionamos con las demás clases que contiene, la clase **LIbro**, la clase **Vendedor** y la clase **Cliente** haciendo uso de una linea solida y una flecha con forma de rombo y un color de fondo negro.
+In this example, the abstract **Person** class is related to its child classes or subclasses, **Seller** and **Customer**, using a solid line with a triangular arrow. The main **Library** class is related to the other classes it contains, **Book**, **Seller**777, and **Customer**, using a solid line with a diamond arrow and a black background.
 
-> Es muy importante resaltar que cuando diseñes el diagrama UML de tu aplicación no será un diseño estático, en el momento que empieces a generar el código y quieras agregar más atributos o clases que no tomaste en cuentas al momento de hacer el diseño puedes hacerlo sin ningun problema, solo ten en cuenta que el diseño del diagrama UML de tu aplicación debe representar todos los atributo, métodos e interacciones de tu aplicación de la forma más precisa posible.
+> It's important to highlight that when designing the UML diagram for your application, it won't be static. As you start generating the code and want to add more attributes or classes that you didn't initially consider, you can do so. Just keep in mind that the UML diagram should represent all the attributes, methods, and interactions of your application as accurately as possible.
 
-## Aplicaciones para crear diagramas de clases UML
+## Applications to Create UML Class Diagrams
 
-Existen varias aplicaciones o sitios web que puedes usar para realizar un diagrama de clases UML o de cualquier otro tipo, muchas de ellas tiene acceso a **google drive** para guardar los archivos. Es recomendable guardar tus diseños en algún almacenamiento en la nube como Google dive, Gihub etc... de esta forma estará más seguro. A continuación podrás ver las tres aplicaciones más comunmente utilizadas para diseñar diagramas de cualquier tipo:
+There are several applications or websites you can use to create UML class diagrams or any other types of diagrams. Many of them allow access to **Google Drive** to save files. It is recommended to save your designs in cloud storage like Google Drive, GitHub, etc., so they are more secure. Below are the three most commonly used applications for designing diagrams of any kind:
 
-1. **Draw.io**:  [draw.io](https://app.diagrams.net) es una herramienta gratuita y de código abierto que ofrece una amplia gama de plantillas, incluyendo diagramas de clases UML o de cualquier otro tipo, como diagramas de objetos o de bases de datos y te permite guardar los archivos en diferentes partes como, google drive, github o tu almacenamiento local.
-2. **Visual Paradigm**: [visual paradigm](https://www.visual-paradigm.com) es una aplicación completa de modelado UML con una interfaz gráfica intuitiva que permite crear diagramas de clases, así como otros tipos de diagramas UML.
-3. **Lucidchart**: [lucidchart](https://www.lucidchart.com/pages/es) le permite a los usuarios crear diagramas UML de forma fácil y rápida. Es una buena opción para equipos pequeños o grandes y ofrece una amplia variedad de funciones.
+1. **Draw.io**:  [draw.io](https://app.diagrams.net) is a free, open-source tool that offers a wide range of templates, including UML class diagrams or any other type, such as object diagrams or database diagrams. It allows you to save files in various locations such as Google Drive, GitHub, or your local storage.
+2. **Visual Paradigm**: [visual paradigm](https://www.visual-paradigm.com)  is a comprehensive UML modeling application with an intuitive graphical interface that allows you to create class diagrams as well as other types of 
+3. **Lucidchart**: [lucidchart](https://www.lucidchart.com/pages/es) allows users to create UML diagrams easily and quickly. It’s a good option for small or large teams and offers a wide range of features.
 
-## Conclusión
+## Conclusion
 
-Los diagramas de clases UML son una herramienta esencial para el modelado de sistemas orientados a objetos, Declararlos de forma correcta y usando las aplicaciones adecuadas dependiendo del tipo de proyecto nos permiten visualizar de manera más efectiva las estructuras de nuestro sistema, lo que contribuye a un proceso de desarrollo de software más eficiente y exitoso. Encontrarás más información valiosa en el Blog de [4Geeks](https://4geeks.com/es).
+UML class diagrams are an essential tool for modeling object-oriented systems. Declaring them correctly and using the right tools depending on the type of project allows us to visualize the structure of our system more effectively, contributing to a more efficient and successful software development process. You’ll find more valuable information on the [4Geeks](https://4geeks.com/es).
